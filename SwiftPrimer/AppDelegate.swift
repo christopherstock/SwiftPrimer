@@ -1,46 +1,69 @@
-//
-//  AppDelegate.swift
-//  SwiftPrimer
-//
-//  Created by Christopher Stock on 23.10.18.
-//  Copyright © 2018 Mayflower GmbH. All rights reserved.
-//
 
 import UIKit
 
+/**
+ *  The main application delegate.
+ */
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate : UIResponder, UIApplicationDelegate
+{
+    /** The UI window instance. */
+    var window : UIWindow?
 
-    var window: UIWindow?
+    /**
+     *  The constructor is being invoked when this application is instanciated.
+     */
+    func application
+    (
+        _ application : UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [ UIApplication.LaunchOptionsKey: Any ]?
+    )
+    -> Bool
+    {
+        print( "AppDelegate::constructor being invoked" )
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // add customization after application launch here
+        
         return true
     }
 
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    /**
+     *  Being invoked when the application moves from active to inactive state.
+     */
+    func applicationWillResignActive(_ application: UIApplication) -> Void
+    {
+        print( "AppDelegate::applicationWillResignActive being invoked" )
     }
 
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    /**
+     *  Being invoked when the application enters the background state.
+     */
+    func applicationDidEnterBackground(_ application: UIApplication)
+    {
+        print( "AppDelegate::applicationDidEnterBackground being invoked" )
     }
 
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    /**
+     *  Being invoked when the application enters the foreground state.
+     */
+    func applicationWillEnterForeground(_ application: UIApplication)
+    {
+        print( "AppDelegate::applicationWillEnterForeground being invoked" )
     }
 
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    /**
+     *  Being invoked when the application became active (again).
+     */
+    func applicationDidBecomeActive(_ application: UIApplication)
+    {
+        print( "AppDelegate::applicationDidBecomeActive being invoked" )
     }
 
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    /**
+     *  Being invoked when the application is about to terminate.
+     */
+    func applicationWillTerminate(_ application: UIApplication)
+    {
+        print( "AppDelegate::applicationWillTerminate being invoked" )
     }
-
-
 }
-
