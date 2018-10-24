@@ -42,25 +42,26 @@ class AppDelegate : UIResponder, UIApplicationDelegate
         
         let MY_CONSTANT_3 : Double = 7.3;
         var myVariable3   : Double = 67.2;
-/*
-        let MY_CONSTANT_4 : Any = nil;
-        var myVariable4   : Any = nil;
-*/
+
+        let MY_CONSTANT_4 : Float = 77.0;
+        var myVariable4   : Float = 69.0;
+
+        let MY_CONSTANT_5 : Int! = Int( MY_CONSTANT );
+
+        let MY_LONG_STRING : String = """
+This is my line 1.
+This is my line 2.
+This is my line 3.
+""";
         myVariable = "65"
 
-        let MY_CONSTANT_4 :Int! = Int( MY_CONSTANT );
-        
-        print( "My constant is: " + MY_CONSTANT );
-        print( "My variable is: " + myVariable  );
+        print( "My constant  is: "         + MY_CONSTANT             );
+        print( "My variable  is: "         + myVariable              );
+        print( "My variable2 is: "         + String( myVariable2   ) );
         print( "My casted constant 2 is: " + String( MY_CONSTANT_2 ) );
-        print( "My casted constant 1 is: " + String( MY_CONSTANT_4 ) );
-        
-        
-        
-        
-        
-        
-        
+        print( "My casted constant 1 is: " + String( MY_CONSTANT_5 ) );
+        print( "My long string is: "       + MY_LONG_STRING          );
+
         
         
         
