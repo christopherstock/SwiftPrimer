@@ -1,36 +1,22 @@
 
-import UIKit
-
 /**
- *  The main application delegate.
+ *  The primal test class.
  */
-@UIApplicationMain
-class AppDelegate : UIResponder, UIApplicationDelegate
+class SwiftPrimer
 {
-    /** The UI window instance. */
-    var window : UIWindow?
-
-    /**
-     *  The constructor is being invoked when this application is instanciated.
-     */
-    func application
-    (
-        _ application : UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [ UIApplication.LaunchOptionsKey : Any ]?
-    )
-    -> Bool
+    static func test() -> Void
     {
-        print( "AppDelegate::constructor being invoked" )
-
+        let mySwiftPrimer: SwiftPrimer = SwiftPrimer()
+        
         // try the SWIFT syntax tour
-        trySwiftSyntaxTour()
-
+        mySwiftPrimer.trySwiftSyntaxTour()
+        
         // try the greet example
-        print( self.greet( person: "Bob", on: "Tuesday", 27 ) )
+        print( mySwiftPrimer.greet( person: "Bob", on: "Tuesday", 27 ) )
         print( "" )
         
         // invoke a static method
-        AppDelegate.printMyString( myString: "The string to print out .." )
+        SwiftPrimer.printMyString( myString: "The string to print out .." )
         print( "" )
         
         // invoke external class and get my tuple
@@ -38,57 +24,20 @@ class AppDelegate : UIResponder, UIApplicationDelegate
         print( "My Tuple is: " )
         print( myTuple )
         print( "" )
-
-
-
-
-
-
-
-
-        // add customization after application launch here
-        
-        return true
     }
-
+    
     /**
-     *  Being invoked when the application moves from active to inactive state.
+     *  Returns a tuple.
+     *
+     *  @return The string to print out.
      */
-    func applicationWillResignActive(_ application: UIApplication) -> Void
+    static func getMyTuple() -> ( name: String, age: Int, gender: String )
     {
-        print( "AppDelegate::applicationWillResignActive being invoked" )
-    }
-
-    /**
-     *  Being invoked when the application enters the background state.
-     */
-    func applicationDidEnterBackground(_ application: UIApplication)
-    {
-        print( "AppDelegate::applicationDidEnterBackground being invoked" )
-    }
-
-    /**
-     *  Being invoked when the application enters the foreground state.
-     */
-    func applicationWillEnterForeground(_ application: UIApplication)
-    {
-        print( "AppDelegate::applicationWillEnterForeground being invoked" )
-    }
-
-    /**
-     *  Being invoked when the application became active (again).
-     */
-    func applicationDidBecomeActive(_ application: UIApplication)
-    {
-        print( "AppDelegate::applicationDidBecomeActive being invoked" )
-    }
-
-    /**
-     *  Being invoked when the application is about to terminate.
-     */
-    func applicationWillTerminate(_ application: UIApplication)
-    {
-        print( "AppDelegate::applicationWillTerminate being invoked" )
+        return (
+            name: "Christopher",
+            age: 38,
+            gender: "Male"
+        )
     }
     
     /**
@@ -247,7 +196,7 @@ This is my line 3.
     {
         return "Hello " + person + ", today is " + day + " and your age is " + String( age ) + "."
     }
-
+    
     /**
      *  Prints out a string.
      *

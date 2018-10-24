@@ -99,13 +99,11 @@
 		E90812DA217F4E6B00C5043B /* SwiftPrimer */ = {
 			isa = PBXGroup;
 			children = (
-				E90812DB217F4E6B00C5043B /* AppDelegate.swift */,
-				E90812DD217F4E6B00C5043B /* ViewController.swift */,
+				E90FCE0A2180CA00001F4808 /* classes */,
 				E90812DF217F4E6B00C5043B /* Main.storyboard */,
 				E90812E2217F4E6E00C5043B /* Assets.xcassets */,
 				E90812E4217F4E6E00C5043B /* LaunchScreen.storyboard */,
 				E90812E7217F4E6E00C5043B /* Info.plist */,
-				E90FCE082180BDE3001F4808 /* SwiftPrimer.swift */,
 			);
 			path = SwiftPrimer;
 			sourceTree = "<group>";
@@ -126,6 +124,16 @@
 				E90812FD217F4E6E00C5043B /* Info.plist */,
 			);
 			path = SwiftPrimerUITests;
+			sourceTree = "<group>";
+		};
+		E90FCE0A2180CA00001F4808 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				E90812DB217F4E6B00C5043B /* AppDelegate.swift */,
+				E90812DD217F4E6B00C5043B /* ViewController.swift */,
+				E90FCE082180BDE3001F4808 /* SwiftPrimer.swift */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
