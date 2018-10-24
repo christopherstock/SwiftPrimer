@@ -88,13 +88,48 @@ This is my line 3.
         print( "My array is: "             + MY_ARRAY_1.description  );
         print( "My list is: "              + MY_LIST_1.description   );
 
+
+        if ( true )
+        {
+            print( "Condition always granted 1" )
+        }
+        else
+        {
+            print( "Condition never granted 1" )
+        }
+
+        if ( MY_CONSTANT_2 == 7 )
+        {
+            print( "Condition always granted 2" )
+        }
+        else
+        {
+            print( "Condition never granted 2" )
+        }
+
+        print( "Team members:" )
+        for member : String in MY_ARRAY_1
+        {
+            print( " Team member: " + member )
+        }
+
+        print( "Team ages one:" )
+        for ( name, age ) in MY_LIST_1
+        {
+            print( " Team member [" + name + "] age [" + String( age ) + "]" )
+        }
+
+        print( "Team ages two:" )
+        for ( member ) in MY_LIST_1
+        {
+            print( " Team member [" + member.key + "] age [" + String( member.value ) + "]" )
+        }
+        
+
         print( "Test code END"            )
         print( "========================" )
         print( ""                         )
 
-        
-        
-        
         return true
     }
 
