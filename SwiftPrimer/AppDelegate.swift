@@ -25,6 +25,11 @@ class AppDelegate : UIResponder, UIApplicationDelegate
         // try the SWIFT syntax tour
         trySwiftSyntaxTour()
 
+        // try the greet example
+        print( greet( person: "Bob", day: "Tuesday" ) )
+        
+        
+        
         // add customization after application launch here
         
         return true
@@ -211,5 +216,16 @@ This is my line 3.
         print( "Test code END"            )
         print( "========================" )
         print( ""                         )
+    }
+    
+    /**
+     *  Returns a salutation.
+     *
+     *  @param person The person to greet.
+     *  @param day    The day to greet.
+     */
+    func greet( person: String, day: String ) -> String
+    {
+        return "Hello " + person + ", today is " + day + "."
     }
 }
