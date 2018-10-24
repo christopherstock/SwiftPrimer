@@ -24,6 +24,47 @@ class AppDelegate : UIResponder, UIApplicationDelegate
 
         // add customization after application launch here
         
+        
+        
+        
+        
+        
+        
+        
+        
+        print( "Test code being invoked!" )
+        
+        let MY_CONSTANT : String = "42"
+        var myVariable  : String = "77"
+        
+        let MY_CONSTANT_2 : Int = 7;
+        var myVariable2   : Int = 67;
+        
+        let MY_CONSTANT_3 : Double = 7.3;
+        var myVariable3   : Double = 67.2;
+/*
+        let MY_CONSTANT_4 : Any = nil;
+        var myVariable4   : Any = nil;
+*/
+        myVariable = "65"
+
+        let MY_CONSTANT_4 :Int! = Int( MY_CONSTANT );
+        
+        print( "My constant is: " + MY_CONSTANT );
+        print( "My variable is: " + myVariable  );
+        print( "My casted constant 2 is: " + String( MY_CONSTANT_2 ) );
+        print( "My casted constant 1 is: " + String( MY_CONSTANT_4 ) );
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         return true
     }
 
