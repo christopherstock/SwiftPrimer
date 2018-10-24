@@ -30,6 +30,13 @@ class SwiftPrimerSub : SwiftPrimer
         self.testValue = 71
         print( "Test value is: " + String( self.testValue ) )
 
+        var myString :String? = nil
+        var myStringLength :Int? = myString?.count
+        print( "Test string length is: " )
+        print( myStringLength )
+
+
+
 
 
     }
