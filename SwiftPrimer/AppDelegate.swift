@@ -33,12 +33,11 @@ class AppDelegate : UIResponder, UIApplicationDelegate
         AppDelegate.printMyString( myString: "The string to print out .." )
         print( "" )
         
-        // get my tuple
-        let myTuple : (name:String, age:Int, gender:String) = AppDelegate.getMyTuple()
+        // invoke external class and get my tuple
+        let myTuple : (name:String, age:Int, gender:String) = SwiftPrimer.getMyTuple()
         print( "My Tuple is: " )
         print( myTuple )
         print( "" )
-
 
 
 
@@ -257,19 +256,5 @@ This is my line 3.
     static func printMyString( myString: String ) -> Void
     {
         print( myString )
-    }
-
-    /**
-     *  Returns a tuple.
-     *
-     *  @return The string to print out.
-     */
-    static func getMyTuple() -> ( name: String, age: Int, gender: String )
-    {
-        return (
-            name: "Christopher",
-            age: 38,
-            gender: "Male"
-        )
     }
 }
