@@ -4,9 +4,18 @@
  */
 class SwiftPrimer
 {
+    static var myStaticField = 38
+    var myInstanceField :Int = 44
+    var name :String = ""
+
+    init( name:String )
+    {
+        self.name = name
+    }
+    
     static func test() -> Void
     {
-        let mySwiftPrimer: SwiftPrimer = SwiftPrimer()
+        let mySwiftPrimer: SwiftPrimer = SwiftPrimer( name: "Chrisy" )
         
         // try the SWIFT syntax tour
         mySwiftPrimer.trySwiftSyntaxTour()
@@ -24,8 +33,13 @@ class SwiftPrimer
         print( "My Tuple is: " )
         print( myTuple )
         print( "" )
+        
+        // show instance and static field
+        print( "My instance field is: " + String( mySwiftPrimer.myInstanceField ) )
+        print( "My name is: " + mySwiftPrimer.name )
+        print( "My static   field is: " + String( self.myStaticField ) )
     }
-    
+
     /**
      *  Returns a tuple.
      *
