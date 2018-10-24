@@ -26,7 +26,12 @@ class AppDelegate : UIResponder, UIApplicationDelegate
         trySwiftSyntaxTour()
 
         // try the greet example
-        print( greet( person: "Bob", day: "Tuesday" ) )
+        print( self.greet( person: "Bob", day: "Tuesday" ) )
+        print( "" )
+        
+        // invoke a static method
+        AppDelegate.printMyString( myString: "The string to print out .." )
+        print( "" )
         
         
         
@@ -227,5 +232,15 @@ This is my line 3.
     func greet( person: String, day: String ) -> String
     {
         return "Hello " + person + ", today is " + day + "."
+    }
+
+    /**
+     *  Prints out a string.
+     *
+     *  @param myString The string to print out.
+     */
+    static func printMyString( myString: String ) -> Void
+    {
+        print( myString )
     }
 }
