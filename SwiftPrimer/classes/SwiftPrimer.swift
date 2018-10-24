@@ -1,4 +1,3 @@
-
 /**
  *  The primal test class.
  */
@@ -20,7 +19,7 @@ class SwiftPrimer
 
     static func test() -> Void
     {
-        let mySwiftPrimer: SwiftPrimer = SwiftPrimer( name: "Chrisy" )
+        let mySwiftPrimer: SwiftPrimerSub = SwiftPrimerSub( name: "Chrisy" )
 
         // try the SWIFT syntax tour
         mySwiftPrimer.trySwiftSyntaxTour()

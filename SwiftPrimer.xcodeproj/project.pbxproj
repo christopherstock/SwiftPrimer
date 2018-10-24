@@ -15,6 +15,7 @@
 		E90812F1217F4E6E00C5043B /* SwiftPrimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90812F0217F4E6E00C5043B /* SwiftPrimerTests.swift */; };
 		E90812FC217F4E6E00C5043B /* SwiftPrimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90812FB217F4E6E00C5043B /* SwiftPrimerUITests.swift */; };
 		E90FCE092180BDE3001F4808 /* SwiftPrimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FCE082180BDE3001F4808 /* SwiftPrimer.swift */; };
+		E90FCE0C2180D4C7001F4808 /* SwiftPrimerSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FCE0B2180D4C7001F4808 /* SwiftPrimerSub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E90812FB217F4E6E00C5043B /* SwiftPrimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPrimerUITests.swift; sourceTree = "<group>"; };
 		E90812FD217F4E6E00C5043B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90FCE082180BDE3001F4808 /* SwiftPrimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPrimer.swift; sourceTree = "<group>"; };
+		E90FCE0B2180D4C7001F4808 /* SwiftPrimerSub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPrimerSub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				E90812DB217F4E6B00C5043B /* AppDelegate.swift */,
 				E90812DD217F4E6B00C5043B /* ViewController.swift */,
 				E90FCE082180BDE3001F4808 /* SwiftPrimer.swift */,
+				E90FCE0B2180D4C7001F4808 /* SwiftPrimerSub.swift */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E90812DE217F4E6B00C5043B /* ViewController.swift in Sources */,
+				E90FCE0C2180D4C7001F4808 /* SwiftPrimerSub.swift in Sources */,
 				E90812DC217F4E6B00C5043B /* AppDelegate.swift in Sources */,
 				E90FCE092180BDE3001F4808 /* SwiftPrimer.swift in Sources */,
 			);
