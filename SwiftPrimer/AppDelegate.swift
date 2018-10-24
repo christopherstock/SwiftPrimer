@@ -71,12 +71,6 @@ This is my line 3.
         let MY_ARRAY_3 : [String] = []
         let MY_LIST_3 : [String:Int] = [:]
 
-        
-        
-        
-        
-        
-        
         myVariable = "65"
 
         print( "My constant  is: "         + MY_CONSTANT             );
@@ -87,7 +81,6 @@ This is my line 3.
         print( "My long string is: "       + MY_LONG_STRING          );
         print( "My array is: "             + MY_ARRAY_1.description  );
         print( "My list is: "              + MY_LIST_1.description   );
-
 
         if ( true )
         {
@@ -125,7 +118,56 @@ This is my line 3.
             print( " Team member [" + member.key + "] age [" + String( member.value ) + "]" )
         }
         
+        print( "Switch test:" )
+        var myVariable5 : Int = 42;
+        switch ( myVariable5 )
+        {
+            case 1:
+                print( " Switch case one" )
+            
+            case 2:
+                print( " Switch case two" )
 
+            case 42:
+                print( " Switch case three" )
+            
+            default:
+                print( " Switch case default" )
+        }
+        
+        var i : Int = 0
+        print( "Loop test headed" )
+        while ( i < 10 )
+        {
+            print( " Loop value [" + String( i ) + "]" )
+            i += 1
+        }
+
+        var j : Int = 0
+        print( "Loop test footed" )
+        repeat
+        {
+            print( " Loop value [" + String( j ) + "]" )
+            j += 1
+        }
+        while ( j < 10 )
+
+        print( "Range in For Loop ONE" )
+        for k : Int in 0..<5
+        {
+            print( " Number is [" + String( k ) + "]" )
+        }
+
+        let myRange1 : ClosedRange<Int> = 0...5
+        print( "Range in For Loop TWO" )
+        for l : Int in myRange1
+        {
+            print( " Number is [" + String( l ) + "]" )
+        }
+        
+        
+
+        
         print( "Test code END"            )
         print( "========================" )
         print( ""                         )
