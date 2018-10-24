@@ -32,27 +32,47 @@ class AppDelegate : UIResponder, UIApplicationDelegate
         
         
         
-        print( "Test code being invoked!" )
+        print( ""                         )
+        print( "========================" )
+        print( "Test code START"          )
         
         let MY_CONSTANT : String = "42"
         var myVariable  : String = "77"
         
-        let MY_CONSTANT_2 : Int = 7;
-        var myVariable2   : Int = 67;
+        let MY_CONSTANT_2 : Int = 7
+        var myVariable2   : Int = 67
         
-        let MY_CONSTANT_3 : Double = 7.3;
-        var myVariable3   : Double = 67.2;
+        let MY_CONSTANT_3 : Double = 7.3
+        var myVariable3   : Double = 67.2
 
-        let MY_CONSTANT_4 : Float = 77.0;
-        var myVariable4   : Float = 69.0;
+        let MY_CONSTANT_4 : Float = 77.0
+        var myVariable4   : Float = 69.0
 
-        let MY_CONSTANT_5 : Int! = Int( MY_CONSTANT );
+        let MY_CONSTANT_5 : Int! = Int( MY_CONSTANT )
 
         let MY_LONG_STRING : String = """
 This is my line 1.
 This is my line 2.
 This is my line 3.
 """;
+        
+        let MY_ARRAY_1 : [String] = [
+            "Chris",
+            "Eugen",
+            "Jenny",
+        ];
+        let MY_LIST_1  : [String:Int] = [
+            "Chris": 38,
+            "Eugen": 35,
+            "Jenny": 23,
+        ];
+        let MY_ARRAY_2 : [String] = [String]()
+        let MY_LIST_2 : [String:Int] = [String:Int]()
+        let MY_ARRAY_3 : [String] = []
+        let MY_LIST_3 : [String:Int] = [:]
+
+        
+        
         myVariable = "65"
 
         print( "My constant  is: "         + MY_CONSTANT             );
@@ -61,8 +81,13 @@ This is my line 3.
         print( "My casted constant 2 is: " + String( MY_CONSTANT_2 ) );
         print( "My casted constant 1 is: " + String( MY_CONSTANT_5 ) );
         print( "My long string is: "       + MY_LONG_STRING          );
+        print( "My array is: "             + MY_ARRAY_1.description  );
+        print( "My list is: "              + MY_LIST_1.description   );
 
-        
+        print( "Test code END"            )
+        print( "========================" )
+        print( ""                         )
+
         
         
         
