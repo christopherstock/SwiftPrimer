@@ -26,15 +26,27 @@ class AppDelegate : UIResponder, UIApplicationDelegate
         trySwiftSyntaxTour()
 
         // try the greet example
-        print( self.greet( person: "Bob", day: "Tuesday" ) )
+        print( self.greet( person: "Bob", on: "Tuesday", 27 ) )
         print( "" )
         
         // invoke a static method
         AppDelegate.printMyString( myString: "The string to print out .." )
         print( "" )
         
-        
-        
+        // get my tuple
+        let myTuple : (name:String, age:Int, gender:String) = AppDelegate.getMyTuple()
+        print( "My Tuple is: " )
+        print( myTuple )
+        print( "" )
+
+
+
+
+
+
+
+
+
         // add customization after application launch here
         
         return true
@@ -227,11 +239,14 @@ This is my line 3.
      *  Returns a salutation.
      *
      *  @param person The person to greet.
-     *  @param day    The day to greet.
+     *  @param on     The day to greet.
+     *  @param age    The age of the person to greet.
+     *
+     *  @return The greeting string.
      */
-    func greet( person: String, day: String ) -> String
+    func greet( person: String, on day: String, _ age: Int ) -> String
     {
-        return "Hello " + person + ", today is " + day + "."
+        return "Hello " + person + ", today is " + day + " and your age is " + String( age ) + "."
     }
 
     /**
@@ -242,5 +257,19 @@ This is my line 3.
     static func printMyString( myString: String ) -> Void
     {
         print( myString )
+    }
+
+    /**
+     *  Returns a tuple.
+     *
+     *  @return The string to print out.
+     */
+    static func getMyTuple() -> ( name: String, age: Int, gender: String )
+    {
+        return (
+            name: "Christopher",
+            age: 38,
+            gender: "Male"
+        )
     }
 }
