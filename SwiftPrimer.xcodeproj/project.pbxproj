@@ -17,6 +17,7 @@
 		E90FCE092180BDE3001F4808 /* SwiftPrimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FCE082180BDE3001F4808 /* SwiftPrimer.swift */; };
 		E90FCE0C2180D4C7001F4808 /* SwiftPrimerSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FCE0B2180D4C7001F4808 /* SwiftPrimerSub.swift */; };
 		E90FCE0E2180DC14001F4808 /* SwiftPrimerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FCE0D2180DC14001F4808 /* SwiftPrimerEnum.swift */; };
+		E90FCE102181AC2A001F4808 /* SwiftPrimerStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FCE0F2181AC2A001F4808 /* SwiftPrimerStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E90FCE082180BDE3001F4808 /* SwiftPrimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPrimer.swift; sourceTree = "<group>"; };
 		E90FCE0B2180D4C7001F4808 /* SwiftPrimerSub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPrimerSub.swift; sourceTree = "<group>"; };
 		E90FCE0D2180DC14001F4808 /* SwiftPrimerEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPrimerEnum.swift; sourceTree = "<group>"; };
+		E90FCE0F2181AC2A001F4808 /* SwiftPrimerStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPrimerStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				E90FCE082180BDE3001F4808 /* SwiftPrimer.swift */,
 				E90FCE0B2180D4C7001F4808 /* SwiftPrimerSub.swift */,
 				E90FCE0D2180DC14001F4808 /* SwiftPrimerEnum.swift */,
+				E90FCE0F2181AC2A001F4808 /* SwiftPrimerStruct.swift */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				E90812DE217F4E6B00C5043B /* ViewController.swift in Sources */,
 				E90FCE0E2180DC14001F4808 /* SwiftPrimerEnum.swift in Sources */,
 				E90FCE0C2180D4C7001F4808 /* SwiftPrimerSub.swift in Sources */,
+				E90FCE102181AC2A001F4808 /* SwiftPrimerStruct.swift in Sources */,
 				E90812DC217F4E6B00C5043B /* AppDelegate.swift in Sources */,
 				E90FCE092180BDE3001F4808 /* SwiftPrimer.swift in Sources */,
 			);

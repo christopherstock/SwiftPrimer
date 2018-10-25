@@ -52,5 +52,26 @@ class SwiftPrimerSub : SwiftPrimer
 
         print( "Print color of enum constant:" )
         myEnum.printColor()
+
+        print( "" )
+        print( "Try a struct:" )
+
+        // myStruct2 is just a copy - not a reference!
+        var myStruct1 : SwiftPrimerStruct = SwiftPrimerStruct( myValue: 12 )
+        var myStruct2 : SwiftPrimerStruct = myStruct1
+
+        myStruct2.myInstanceField = 778
+
+        // different values though two separate structs!
+        print( "struct 1 value: " + String( myStruct1.myInstanceField ) )
+        print( "struct 2 value: " + String( myStruct2.myInstanceField ) )
+
+        print( "" )
+
+
+
+
+
+
     }
 }
