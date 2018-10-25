@@ -1,7 +1,7 @@
 /**
  *  The primal test class.
  */
-class SwiftPrimer
+class SwiftPrimer : SwiftPrimerProtocol
 {
     static var myStaticField = 38
     var myInstanceField :Int = 44
@@ -20,6 +20,9 @@ class SwiftPrimer
     static func test() -> Void
     {
         let mySwiftPrimer: SwiftPrimerSub = SwiftPrimerSub( name: "Chrisy" )
+
+        var mySwiftPrimer2 : SwiftPrimerProtocol = SwiftPrimerSub( name: "Katja" )
+        mySwiftPrimer2.sayHello()
 
         // try the SWIFT syntax tour
         mySwiftPrimer.trySwiftSyntaxTour()
@@ -223,5 +226,20 @@ This is my line 3.
     static func printMyString( myString: String ) -> Void
     {
         print( myString )
+    }
+
+    var simpleDescription : String
+    {
+        get
+        {
+            return "The SwiftPrimer description"
+        }
+    }
+
+    func sayHello()
+    {
+        print( "" )
+        print( ">>>>> Hello from SwiftPrimer" )
+        print( "" )
     }
 }

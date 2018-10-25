@@ -67,11 +67,5 @@ class SwiftPrimerSub : SwiftPrimer
         print( "struct 2 value: " + String( myStruct2.myInstanceField ) )
 
         print( "" )
-
-
-
-
-
-
     }
 }
