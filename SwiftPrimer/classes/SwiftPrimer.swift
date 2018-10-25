@@ -199,9 +199,14 @@ This is my line 3.
             print( " Number is [" + String( l ) + "]" )
         }
 
+        print( "Output Int extension:" )
+
+        print( 7.simpleDescription )
+
         print( "Test code END"            )
         print( "========================" )
         print( ""                         )
+
     }
 
     /**

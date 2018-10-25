@@ -7,3 +7,16 @@ protocol SwiftPrimerProtocol
 
     mutating func sayHello()
 }
+
+extension Int : SwiftPrimerProtocol
+{
+    var simpleDescription : String
+    {
+        return "The number \(self)"
+    }
+
+    mutating func sayHello()
+    {
+        self += 42
+    }
+}
