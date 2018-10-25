@@ -45,6 +45,14 @@ class SwiftPrimer : SwiftPrimerProtocol
         print( "My instance field is: " + String( mySwiftPrimer.myInstanceField ) )
         print( "My name is: " + mySwiftPrimer.name )
         print( "My static   field is: " + String( self.myStaticField ) )
+
+        // try generics
+        print( "" )
+        print( "==============================" )
+        print( "Try Generics:" )
+
+        var myGeneric : [Int] = self.makeGenericArray( item: 89 )
+        print( myGeneric )
     }
 
     /**
@@ -256,5 +264,16 @@ This is my line 3.
         print( "" )
         print( ">>>>> Hello from SwiftPrimer" )
         print( "" )
+    }
+
+    private static func makeGenericArray<T>( item:T ) -> [T]
+    {
+        var myArray : [T] = []
+
+        myArray.append( item )
+        myArray.append( item )
+        myArray.append( item )
+
+        return myArray
     }
 }
