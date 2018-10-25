@@ -64,8 +64,13 @@ class SwiftPrimer : SwiftPrimerProtocol
     /**
      *  Tries all primal SWIFT syntax features.
      */
-    func trySwiftSyntaxTour() -> Void
+    func trySwiftSyntaxTour() throws -> Void
     {
+        defer
+        {
+            print( ">>>> This line is DEFERRED to function end!" )
+        }
+
         print( ""                         )
         print( "========================" )
         print( "Test code START"          )
@@ -207,6 +212,11 @@ This is my line 3.
         print( "========================" )
         print( ""                         )
 
+        print( "Throwing an error ..." )
+
+        throw SwiftPrimerError()
+
+        print( "This line is never printed" )
     }
 
     /**

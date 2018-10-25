@@ -19,6 +19,7 @@
 		E90FCE0E2180DC14001F4808 /* SwiftPrimerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FCE0D2180DC14001F4808 /* SwiftPrimerEnum.swift */; };
 		E90FCE102181AC2A001F4808 /* SwiftPrimerStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FCE0F2181AC2A001F4808 /* SwiftPrimerStruct.swift */; };
 		E90FCE122181B2AB001F4808 /* SwiftPrimerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FCE112181B2AB001F4808 /* SwiftPrimerProtocol.swift */; };
+		E90FCE142181CCC0001F4808 /* SwiftPrimerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FCE132181CCC0001F4808 /* SwiftPrimerError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E90FCE0D2180DC14001F4808 /* SwiftPrimerEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPrimerEnum.swift; sourceTree = "<group>"; };
 		E90FCE0F2181AC2A001F4808 /* SwiftPrimerStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPrimerStruct.swift; sourceTree = "<group>"; };
 		E90FCE112181B2AB001F4808 /* SwiftPrimerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPrimerProtocol.swift; sourceTree = "<group>"; };
+		E90FCE132181CCC0001F4808 /* SwiftPrimerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPrimerError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				E90FCE0D2180DC14001F4808 /* SwiftPrimerEnum.swift */,
 				E90FCE0F2181AC2A001F4808 /* SwiftPrimerStruct.swift */,
 				E90FCE112181B2AB001F4808 /* SwiftPrimerProtocol.swift */,
+				E90FCE132181CCC0001F4808 /* SwiftPrimerError.swift */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				E90812DC217F4E6B00C5043B /* AppDelegate.swift in Sources */,
 				E90FCE122181B2AB001F4808 /* SwiftPrimerProtocol.swift in Sources */,
 				E90FCE092180BDE3001F4808 /* SwiftPrimer.swift in Sources */,
+				E90FCE142181CCC0001F4808 /* SwiftPrimerError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

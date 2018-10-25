@@ -20,7 +20,18 @@ class SwiftPrimerSub : SwiftPrimer
      */
     override func trySwiftSyntaxTour() -> Void
     {
-        super.trySwiftSyntaxTour()
+        do
+        {
+            try super.trySwiftSyntaxTour()
+        }
+        catch let err as SwiftPrimerError
+        {
+            print( "==> SwiftPrimerError caught: " + err.localizedDescription )
+        }
+        catch let err
+        {
+            print( "==> Error caught: " + err.localizedDescription )
+        }
 
         print( ">>>>>" )
         print( "This is extra output from the SUB class" )
